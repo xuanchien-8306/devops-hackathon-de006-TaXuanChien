@@ -23,7 +23,12 @@ hackathon/
 ## 4. Cấu hình Nginx
 
 | Tham số trong template | Giá trị đã điền | Giải thích |
-
+post: 8080 | Cổng mà Nginx sẽ lắng nghe các yêu cầu HTTP |
+server_name | localhost | Tên miền hoặc địa chỉ IP mà Nginx sẽ phục vụ |
+web_root | /var/www/html | Thư mục gốc chứa các tệp HTML của trang web |
+index_file | index.html | Tệp HTML chính của trang web |
+ten_tai_khoan | xuanchien-8306 | Tài khoản người dùng trên hệ thống |
+allow_directive | allow all | Quy tắc cho phép truy cập từ tất cả các địa chỉ IP |
 ## 5. Tường lửa UFW
 (Các rule đã thêm + kết quả ` sudo ufw status verbose')
 
